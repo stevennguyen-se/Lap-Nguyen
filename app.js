@@ -101,6 +101,12 @@ app.get("/webprojects/19/contact", function(req, res) {
 app.get("/webprojects/20", function(req, res) {
     res.render("projects/20");
 });
+app.get("/webprojects/20/rooms", function(req, res) {
+    res.render("projects/20/rooms");
+});
+app.get("/webprojects/20/contact", function(req, res) {
+    res.render("projects/20/contact");
+});
 
 app.get("/webprojects/21", function(req, res) {
     res.redirect("/webProjects");
