@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Lap Nguyen">
+    <title>Calculator</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #calculator {
+            width: 300px;
+            height: auto;
+            margin: 100px auto;
+            background: rgb(93, 170, 230);
+            border-radius: 3px;
+            padding: 20px;
+            box-shadow: 0px 4px gray;
+        }
+
+        .keys {
+            margin: 0;
+            padding-right: 0;
+        }
+
+        .keys span {
+            display: inline-block;
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 3px;
+            background-color: white;
+            margin-left: 10px;
+            margin-top: 10px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+            color: gray;
+            box-shadow: 0px 4px rgb(62, 115, 156);
+        }
+
+        .keys span:hover {
+            background-color: black;
+            color: white;
+            transition: 0.2s;
+        }
+
+        .keys span.operator {
+            background-color: rgb(209, 209, 209);
+        }
+
+        .keys span.delete {
+            background-color: rgb(247, 157, 157);
+            color: white;
+            box-shadow: 0px 4px rgb(238, 84, 84);
+            margin-top: 0;
+        }
+
+        #display {
+            width: 200px;
+            background-color: rgba(124, 122, 122, 0.5);
+            cursor: none;
+            color: white;
+            text-align: right;
+            padding-right: 10px;
+            letter-spacing: 3px;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="calculator">
+        <div class="keys">
+            <span class="delete">C</span>
+            <span id="display">&nbsp</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span class="operator">+</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span class="operator">-</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span class="operator">/</span>
+            <span>0</span>
+            <span>.</span>
+            <span>=</span>
+            <span class="operator">*</span>
+        </div>
+    </div>
+
+    <script src="/js/10.js"></script>
+</body>
+
+</html>

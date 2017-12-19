@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Lap Nguyen">
+    <title>Minesweeper</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #myCanvas {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            padding: 0;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 2px;
+            cursor: pointer;
+        }
+
+        div#buttons {
+            text-align: center;
+            margin: 10px auto;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="buttons">
+        <button class="button" onclick="initial(400, 400, 20)">Easy</button>
+        <button class="button" onclick="initial(500, 500, 30)">Normal</button>
+        <button class="button" onclick="initial(600, 600, 40)">Hard</button>
+    </div>
+    <canvas id="myCanvas" style="background-color: none;" onclick="play(event.clientX, event.clientY)">
+        Your browser is out-of-date. Please update your browser.
+    </canvas>
+
+    <script src="/js/Cell.js"></script>
+    <script src="/js/14.js"></script>
+</body>
+
+</html>

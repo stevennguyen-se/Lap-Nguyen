@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Lap Nguyen">
+    <title>Binary Search Tree</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #myCanvas {
+            display: block;
+            margin: 0 auto;
+            /* position: relative; */
+            padding: 0;
+            background-color: white;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            /* padding: 15px 25px; */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 2px;
+            cursor: pointer;
+            width: 100px;
+        }
+
+        div#buttons {
+            text-align: center;
+            margin: 10px auto;
+            padding: 0;
+        }
+
+        #searchResult {
+            margin: 10px auto;
+            width: 540px;
+            border: solid black 2px;
+            border-radius: 3px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="myCanvas" style="background-color: none;">
+        Your browser is out-of-date. Please update your browser.
+    </canvas>
+
+    <div id="buttons">
+        <input id='tree-input' type='number' placeholder='Enter number'>
+        <button class="button" onclick="addToTree()">Add</button>
+        <button class="button" onclick="search()">Search</button>
+        <button class="button" onclick="newTree()">New Tree</button>
+        <div id="searchResult"><b>Waiting</b></div>
+    </div>
+    <script src="/js/Node.js"></script>
+    <script src="/js/Tree.js"></script>
+    <script src="/js/13.js"></script>
+</body>
+
+</html>

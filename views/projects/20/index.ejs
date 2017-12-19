@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Lap Nguyen">
+    <title>The Hotel</title>
+    
+  <script src="https://use.fontawesome.com/8fb943b67c.js"></script>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link href="/stylesheets/19.css" rel="stylesheet">
+</head>
+
+<body id="theHomepage">
+  <!-- Navigation -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#"><i class="fa fa-building-o"></i> The Hotel</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/webprojects/19">Home</a></li>
+          <li><a href="/webprojects/19/rooms">Rooms</a></li>
+          <li><a href="/webprojects/19/contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Master Head -->
+  <section id="masterHead" class="row">
+    <div class="col-lg-12">
+      <div id="content">
+        <h1>The Hotel</h1>
+        <h3>Your home at Melbourne CBD</h3>
+        <hr>
+        <button class="btn btn-default btn-lg"><i class="fa fa-calendar" aria-hidden="true"></i> Book now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Our Service</h2>
+          <hr class="smallHr">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <i class="fa fa-star fa-5x text-primary"></i>
+          <h3>5-Star Service</h3>
+          <p class="text-muted">Luxury accommodation with all of the necessary facilities and more</p>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <i class="fa fa-car fa-5x text-primary sr-icons"></i>
+          <h3>Free Airport Pickup</h3>
+          <p class="text-muted">Your driver will wait for you outside and take you to the hotel</p>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-wifi fa-5x text-primary"></i>
+            <h3>Free Wifi</h3>
+            <p class="text-muted">You can connect to your work and entertainment 24/7 free</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-cc-paypal fa-5x text-primary"></i>
+            <h3>Paypal Acctepted</h3>
+            <p class="text-muted">You can pay by any credit cards or PayPal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Room Types -->
+  <section id="roomTypes">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Types of Hotel Rooms</h2>
+          <hr class="smallHr">
+          <h3>We provide <b>three</b> types of hotel rooms</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="roomTypes-link" data-toggle="modal" href="#roomTypesModal1">
+            <a href="/webprojects/19/rooms"><img class="img-fluid" src="/img/room.jpg" alt=""></a>
+          </div>
+          <div class="text-center">
+            <h4><b>Double</b></h4>
+            <p class="text-muted"><i class="fa fa-usd fa-lg"></i>60 / Night</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="roomTypes-link" data-toggle="modal" href="#roomTypesModal3">
+            <a href="/webprojects/19/rooms"><img class="img-fluid" src="/img/room.jpg" alt=""></a>
+          </div>
+          <div class="text-center">
+            <h4><b>Queen</b></h4>
+            <p class="text-muted"><i class="fa fa-usd fa-lg"></i>80 / Night</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="roomTypes-link" data-toggle="modal" href="#roomTypesModal2">
+            <a href="/webprojects/19/rooms"><img class="img-fluid" src="/img/room.jpg"
+              alt=""></a>
+          </div>
+          <div class="text-center">
+            <h4><b>King</b></h4>
+            <p class="text-muted"><i class="fa fa-usd fa-lg"></i>100 / Night</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <section id="contact" style="background-color: steelblue; color: white;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Let's Get In Touch!</h2>
+          <hr class="smallHr" style="border-top: 3px solid white;">
+          <h3>Ready to start your next journey with us? Give us a call or send us an email!</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 ml-auto text-center">
+          <i class="fa fa-phone fa-3x sr-contact"></i>
+          <p>123-456-6789</p>
+        </div>
+        <div class="col-lg-6 mr-auto text-center">
+          <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+          <p>
+            <a href="mailto:#" style="color: white;">feedback@thehotel.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

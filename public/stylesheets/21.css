@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+}
+
+#container {
+    padding: 30vh 0;
+    text-align: center;
+}
+
+.inline {
+    display: inline-block;
+}
+
