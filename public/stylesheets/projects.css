@@ -1,7 +1,10 @@
 
 .caption {
-    height: 150px;
+    height: 160px;
     overflow: hidden;
+}
+.scroll {
+    overflow: scroll;
 }
 .caption .description{
     padding-top: 10px;
