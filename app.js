@@ -120,6 +120,14 @@ app.get("/webprojects/23", function(req, res) {
     res.redirect("/webProjects");
 });
 
+app.get("/webprojects/24", function(req, res) {
+    res.render("projects/24/index");
+});
+
+app.get("/webprojects/25", function(req, res) {
+    res.render("projects/25/index");
+});
+
 // MOBILE PROJECT
 app.get("/mobileprojects", function(req, res) {
     res.render("mobileProjects");

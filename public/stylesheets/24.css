@@ -1,0 +1,33 @@
+.strike {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+ul {
+    position: relative;
+}
+
+.list-group-item {
+    height: 55px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.card-footer {
+    z-index: 1;
+}
+
+.ng-leave {
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+    opacity: 1;
+    height: 55px;
+}
+
+.ng-leave-active {
+    opacity: 0.5;
+    height: 0;
+}
+
