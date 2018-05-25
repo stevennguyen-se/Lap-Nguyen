@@ -170,6 +170,10 @@ app.get("/webprojects/25", function(req, res) {
     res.render("projects/25/index");
 });
 
+app.get("/webprojects/31", function(req, res) {
+    res.render("projects/31/index");
+});
+
 // MOBILE PROJECT
 app.get("/mobileprojects", function(req, res) {
     res.render("mobileProjects");
