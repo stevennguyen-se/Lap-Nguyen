@@ -1,24 +1,18 @@
 (function($) {
 
-	"use strict";	
+    "use strict";
 
-  
+
     $('.navigation').singlePageNav({
-        currentClass : 'active'
+        currentClass: 'active'
     });
 
 
-    $('.toggle-menu').click(function(){
-        $('.responsive-menu').stop(true,true).slideToggle();
+    $('.toggle-menu').click(function() {
+        $('.responsive-menu').stop(true, true).slideToggle();
         return false;
     });
 
 
 
 })(jQuery);
-
-
-
-
-
-
