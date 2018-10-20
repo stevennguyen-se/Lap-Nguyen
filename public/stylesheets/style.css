@@ -1,21 +1,93 @@
 /* RESET */
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Times New Roman", Times, serif;
     line-height: 24px;
     color: #777777;
     overflow-x: hidden;
 }
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: 'Lato', sans-serif;
-}
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -30,8 +102,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .steelblue {
     color: steelblue;
 }
+
 .black {
-    color: black;    
+    color: black;
 }
 
 ol,
@@ -52,7 +125,11 @@ a:hover {
     color: #555555;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: #555555;
 }
 
@@ -132,6 +209,7 @@ hr {
 }
 
 /* SIDEBAR */
+
 .sidebar-menu {
     float: left;
     width: 23%;
@@ -322,6 +400,7 @@ p.profile-contact {
 }
 
 /* BANNER  */
+
 .mobile-banner-bg {
     height: 100vh;
     padding: 35vh 0;
@@ -382,6 +461,7 @@ p.profile-contact {
 }
 
 /* PROJECTS */
+
 .projects-holder {
     margin-right: 0;
     margin-left: 0;
@@ -460,11 +540,13 @@ p.profile-contact {
 }
 
 /* CONTACT */
+
 .contact-form {
     margin-top: 50px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     outline: 0;
     border: 1px solid #aaaaaa;
@@ -492,6 +574,7 @@ p.profile-contact {
 }
 
 /* Footer */
+
 #footer {
     margin: 50px 0;
 }
@@ -540,4 +623,8 @@ p.profile-contact {
 
 .thumbnail {
     padding: 0;
+}
+
+.list-group {
+    border-radius: 0;
 }
