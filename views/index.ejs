@@ -7,96 +7,80 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Lap Nguyen">
     <title>Lap Nguyen</title>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+    <!--      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"-->
+    <!--      crossorigin="anonymous">-->
     <link rel="stylesheet" href="stylesheets/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="responsive-header visible-xs visible-sm">
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 pl-0">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="/"><b>LAP NGUYEN</b></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" style="border: solid 1px white;"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse main-navigation" id="navbar">
+                            <ul class="navbar-nav ml-auto navigation">
+                                 <li class="nav-item"><a class="nav-link active" href="#top">HOME <span class="sr-only">(current)</span></a> </li>
+                                 <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a> </li>
+                                 <li class="nav-item"><a class="nav-link" href="#projects">PORTFOLIO</a> </li>
+                                 <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a> </li>
+                            </ul>
+                            <a href="/docs/LapNguyen_Resume.pdf" download class="nav-link btn-cv" id="btn-cv">DOWNLOAD CV</a>
+                        </div>
+                     </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<div class="responsive-header" id="top">
     <div class="mobile-banner-bg">
         <div class="banner-overlay"></div>
         <div class="welcome-text text-center">
-            <h3>Hello</h3>
-            <h2>I'M <span class="greenyellow">LAP NGUYEN</span></h2>
+            <h3 class="text-white">Hello, are you looking for a developer...?</h3>
+            <h2>Here I'm <span class="greenyellow">Lap Nguyen</span></h2>
         </div>
-    </div>
-</div>
+    
+        <div class="row mt-4">
+          <div class="col-6">
+            <div class="profile-image float-right">
+                <img src="img/profile.jpg" alt="Lap Nguyen">
+            </div>
+          </div>
+          <div class="col-6" style="border-left: solid 1px white;">
+            <div class="profile-details float-left">
+                <p class="profile-contact">
+                    <i class="fa fa-envelope" aria-hidden="true"></i> LapNguyen.se@gmail.com
+                    <br>
+                    <i class="fa fa-phone" aria-hidden="true"></i> (+61) 414 389 384
+                    <br>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> NSW 2170, Australia
+                    <br>
 
-<!-- SIDEBAR -->
-<div class="sidebar-menu hidden-xs hidden-sm">
-    <!-- top-section -->
-    <div class="top-section">
-        <div class="profile-image">
-            <img src="img/profile.jpg" alt="Lap Nguyen">
+                    <div class="social-icons text-center">
+                        <ul>
+                            <li>
+                                <!--https://www.linkedin.com/in/lap-nguyen-608104156/-->
+                                <a target="_blank" href="https://www.linkedin.com/in/lapnguyen-se/" class="social-a"> 
+                                    <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://github.com/lapnguyen-se" class="social-a">
+                                    <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+          </div>
         </div>
-        <div class="profile-details text-center">
-            <h3 class="profile-title">
-                <b>Lap Nguyen</b>
-            </h3>
-            <p class="profile-description">
-                <!--<i>Software Developer</i>-->
-            </p>
-            <hr>
-            <p class="profile-contact">
-                <i class="fa fa-envelope" aria-hidden="true"></i> LapNguyen.se@gmail.com
-                <br>
-                <i class="fa fa-phone fa-lg" aria-hidden="true"></i> (+61) 414 389 384
-                <br>
-                <i class="fa fa-map-marker" aria-hidden="true"></i> Melbourne, Australia
-            </p>
-        </div>
-        <div class="social-icons text-center">
-            <ul>
-                <li>
-                    <!--https://www.linkedin.com/in/lap-nguyen-608104156/-->
-                    <a target="_blank" href="https://www.linkedin.com/in/lapnguyen-se/" class="social-a"> 
-                        <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://github.com/lapnguyen-se" class="social-a">
-                        <i class="fa fa-github fa-lg" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- main-navigation -->
-    <div class="main-navigation">
-        <ul class="navigation text-center">
-            <li>
-                <a href="#top">
-                    WELCOME</a>
-            </li>
-            <li>
-                <a href="#about">
-                    ABOUT ME</a>
-            </li>
-            <li>
-                <a href="#projects">
-                    MY PORTFOLIO</a>
-            </li>
-            <li>
-                <a href="#contact">
-                    CONTACT ME</a>
-            </li>
-        </ul>
-    </div>
-</div>
-
-<!-- BANNER -->
-<div class="banner-bg hidden-xs hidden-sm" id="top">
-    <div class="banner-overlay"></div>
-    <div class="welcome-text">
-        <h3>Hello</h3>
-        <h2>I'M <span class="greenyellow">LAP NGUYEN</span></h2>
     </div>
 </div>
 
@@ -106,36 +90,37 @@
         <div class="content-wrapper">
 
             <!-- ABOUT -->
-            <div class="page-section" id="about">
+            <div class="container page-section" id="about">
                 <div class="row">
                     <div class="col-md-12">
                         <h4 class="widget-title">About Me</h4>
                         <p>
                             I’m a penultimate year IT student and living in Melbourne, Australia. I love learning new technologies and creating software products. Eager to build a career in the software development industry.
                         </p>
-                        <br></br>
+                        
                         <div class="education">
+                            <div class="pull-right">
+                                <h4 class="title steelblue">2017 - 2018</h4>
+                            </div>
                             <h4 class="title">DEAKIN UNIVERSITY, AUSTRALIA</h4>
-                            <h4 class="major">MASTER OF INFORMATION TECHNOLOGY</h4>
-                            <p class="pull-right steelblue">
-                                <b>2017 - Present</b>
-                            </p>
+                            <h4 class="major">Master of Information Technology</h4>
                             <p>
                                 Major: Software Development
                             </p>
                         </div>
                         <div class="education">
+                            <div class="pull-right">
+                                <h4 class="title steelblue">2011 - 2016</h4>
+                            </div>
                             <h4 class="title">UNIVERSITY OF SCIENCE, VIETNAM</h4>
-                            <h4 class="major">BACHELOR OF SCIENCE</h4>
-                            <p class="pull-right steelblue">
-                                <b>2011 - 2016</b>
-                            </p>
+                            <h4 class="major">Bachelor of Science</h4>
                             <p>
                                 Major: Computer Science
                             </p>
                         </div>
+                        
                         <div class="text-center" style="margin-top: 50px;">
-                            <a href="/docs/Lap_Nguyen_Resume.pdf" download id="cv-button">DOWNLOAD CV
+                            <a href="/docs/LapNguyen_Resume.pdf" download id="cv-button">DOWNLOAD CV
                                 <i class="fa fa-download" aria-hidden="true"></i>
                             </a>
                         </div>
@@ -145,14 +130,14 @@
             </div>
 
             <!-- PROJECTS -->
-            <div class="page-section" id="projects">
+            <div class="container page-section" id="projects">
                 <div class="row">
                     <div class="col-md-12">
                         <h4 class="widget-title">MY PORTFOLIO</h4>
-                    <!--    <p>I've been involved in many different types of project including-->
-                    <!--        <b>WEB, MOBILE, GAME, and 3D CONTENT CREATION.</b>-->
-                    <!--    </p>-->
-                    <!--</div>-->
+                        <p>I've been involved in different types of projects including
+                            <b>Web, Mobile, Game, and 3D Content Creation.</b>
+                        </p>
+                    </div>
                 </div>
                 <div class="row projects-holder">
                     <div class="col-md-4 col-sm-12">
@@ -203,7 +188,7 @@
             <hr>
 
             <!-- CONTACT -->
-            <div class="page-section" id="contact">
+            <div class="container page-section" id="contact">
                 <div class="row">
                     <div class="col-md-12">
                         <h4 class="widget-title">PLACE TO TALK WITH ME</h4>
@@ -240,18 +225,16 @@
             <!-- Footer -->
             <div class="row" id="footer">
                 <div class="col-md-12 text-center">
-                    <p class="copyright-text">Copyright &copy; Created by Lap Nguyen December 2017</p>
+                    <p class="copyright-text">Created by Lap Nguyen December 2017</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-    <!--jQuerry-->
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <!--<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
-    
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
