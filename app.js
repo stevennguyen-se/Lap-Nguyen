@@ -19,7 +19,7 @@ app.post("/", function(req, res) {
     var transporter = nodeEmailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'noname.lapnguyen@gmail.com',
+            user: 'lapnguyen.noname@gmail.com',
             pass: 'Lap123456'
         }
     });
@@ -27,14 +27,14 @@ app.post("/", function(req, res) {
     var emailText = '';
     emailText = "From ( " + req.body.email + " ): " + req.body.message;
     var mailOptions = {
-        from: '"Lap Nguyen 👻" <noname.lapnguyen@gmail.com>',
+        from: '"Lap Nguyen" <lapnguyen.noname@gmail.com>',
         to: 'lapnguyen.se@gmail.com',
-        subject: 'lapnguyen.herokuapp.com - ' + req.body.title,
+        subject: 'From lapnguyen.herokuapp.com - ' + req.body.title,
         text: emailText
     };
 
     var mailOptions2 = {
-        from: '"Lap Nguyen 👻" <noname.lapnguyen@gmail.com>',
+        from: '"Lap Nguyen" <lapnguyen.noname@gmail.com>',
         to: req.body.email,
         subject: 'Thank you for your email to lapnguyen.herokuapp.com',
         text: "Your Email has been sent successfully! I will get back to you soon."
@@ -58,46 +58,6 @@ app.get("/webprojects", function(req, res) {
     res.render("webProjects");
 });
 
-app.get("/webprojects/1", function(req, res) {
-    res.render("projects/1/index");
-});
-
-app.get("/webprojects/2", function(req, res) {
-    res.render("projects/2/index");
-});
-
-app.get("/webprojects/3", function(req, res) {
-    res.render("projects/3/index");
-});
-
-app.get("/webprojects/4", function(req, res) {
-    res.render("projects/4/index");
-});
-
-app.get("/webprojects/5", function(req, res) {
-    res.render("projects/5/index");
-});
-
-app.get("/webprojects/6", function(req, res) {
-    res.render("projects/6/index");
-});
-
-app.get("/webprojects/7", function(req, res) {
-    res.render("projects/7/index");
-});
-
-app.get("/webprojects/8", function(req, res) {
-    res.render("projects/8/index");
-});
-
-app.get("/webprojects/9", function(req, res) {
-    res.render("projects/9/index");
-});
-
-app.get("/webprojects/10", function(req, res) {
-    res.render("projects/10/index");
-});
-
 app.get("/webprojects/11", function(req, res) {
     res.render("projects/11/index");
 });
@@ -118,54 +78,6 @@ app.get("/webprojects/15", function(req, res) {
     res.render("projects/15/index");
 });
 
-app.get("/webprojects/16", function(req, res) {
-    res.render("projects/16/index");
-});
-
-app.get("/webprojects/17", function(req, res) {
-    res.render("projects/17/index");
-});
-
-app.get("/webprojects/18", function(req, res) {
-    res.render("projects/18/index");
-});
-
-app.get("/webprojects/19", function(req, res) {
-    res.render("projects/19/index");
-});
-app.get("/webprojects/19/rooms", function(req, res) {
-    res.render("projects/19/rooms");
-});
-app.get("/webprojects/19/contact", function(req, res) {
-    res.render("projects/19/contact");
-});
-
-app.get("/webprojects/20", function(req, res) {
-    res.render("projects/20");
-});
-app.get("/webprojects/20/rooms", function(req, res) {
-    res.render("projects/20/rooms");
-});
-app.get("/webprojects/20/contact", function(req, res) {
-    res.render("projects/20/contact");
-});
-
-app.get("/webprojects/21", function(req, res) {
-    res.redirect("/webProjects");
-});
-
-app.get("/webprojects/22", function(req, res) {
-    res.redirect("/webProjects");
-});
-
-app.get("/webprojects/23", function(req, res) {
-    res.redirect("/webProjects");
-});
-
-app.get("/webprojects/24", function(req, res) {
-    res.render("projects/24/index");
-});
-
 app.get("/webprojects/25", function(req, res) {
     res.render("projects/25/index");
 });
@@ -182,6 +94,10 @@ app.get("/mobileprojects", function(req, res) {
 // GAME PROJECTS
 app.get("/gameprojects", function(req, res) {
     res.render("gameProjects");
+});
+
+app.get("/*", function(req, res) {
+    res.redirect("/");
 });
 
 app.listen(process.env.PORT || 3000, process.env.IP, function() {

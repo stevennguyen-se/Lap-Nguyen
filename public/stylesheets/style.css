@@ -107,6 +107,14 @@ video {
     color: black;
 }
 
+.default {
+    color: #777777;
+}
+
+.rounded-border {
+    border-radius: 6px;
+}
+
 ol,
 ul {
     list-style: none;
@@ -407,7 +415,7 @@ p.profile-contact {
     padding: 8px;
     color: white;
     margin-bottom: 0;
-    border-radius: 0.25rem;
+    border-radius: 6px;
 }
 
 .project-hover .button:hover {
@@ -428,24 +436,6 @@ p.profile-contact {
     padding: 12px;
     color: #999999;
     margin-bottom: 30px;
-}
-
-.contact-form .button {
-    width: 100%;
-    background: steelblue;
-    color: white;
-    text-transform: uppercase;
-    border: 0;
-    margin-bottom: 0;
-    border-radius: 0;
-    -webkit-transition: all 200ms linear;
-    -moz-transition: all 200ms linear;
-    -o-transition: all 200ms linear;
-    transition: all 200ms linear;
-}
-
-.contact-form .button:hover {
-    background-color: rgb(45, 84, 112);
 }
 
 /* Footer */
@@ -478,14 +468,15 @@ p.profile-contact {
     padding: 5px 20px;
 }
 
-#cv-button {
+.cv-button {
     text-align: center;
     padding: 10px;
     background-color: steelblue;
-    color: white;
+    color: white !important;
+    border: none !important;
     margin: 0 auto;
     font-size: 20px;
-    border-radius: 0.25rem;
+    border-radius: 6px;
     -webkit-transition: all 200ms linear;
     -moz-transition: all 200ms linear;
     -ms-transition: all 200ms linear;
@@ -574,14 +565,14 @@ p.profile-contact {
     color: greenyellow !important;
     background-color: none;
     border-radius: 6px;
-    border: solid 1px greenyellow;
+    border: solid 1px greenyellow !important;
     padding: 10px !important;
     outline: none;
 }
 
 .btn-cv:hover {
     color: white !important;
-    background-color: green;
+    background-color: green !important;
 }
 
 button.navbar-toggler {

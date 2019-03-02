@@ -1,34 +1,67 @@
-
-.caption {
-    height: 160px;
-    overflow: hidden;
-}
-.scroll {
-    overflow: scroll;
-}
-.caption .description{
-    padding-top: 10px;
-}
-
-.caption h4 {
-    white-space: nowrap;
-}
-
 .thumbnail img {
     width: 100%;
+    border-radius: 6px 6px 0 0;
+    padding: 2px;
 }
-.thumbnail {
-    border-radius: 0;
+
+.caption {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    height: 3rem;
 }
-.thumbnail hr {
-    height: 2px;
+
+.border {
+    border: solid 1px black !important;
+    border-radius: 6px;
+}
+
+.btn-explore {
+    padding-left: 1rem;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    color: greenyellow !important;
+    background-color: none;
+    border-radius: 6px;
+    border: solid 1px greenyellow !important;
+    padding: 10px !important;
+    outline: none;
+}
+
+.btn-explore:hover {
+    color: white !important;
+    background-color: green !important;
+}
+
+.link-sourcecode {
+    color: deepskyblue !important;
+}
+
+.not-bold {
+    font-weight: normal;
+    color: gray;
+}
+
+.list-group-item {
+
+    color: black;
+}
+
+.list-group-item.active {
+    background-color: steelblue;
+    border: none;
+    font-weight: bold;
+}
+
+.lightbox-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.lightbox-utilised {
+    font-style: italic;
     margin-top: 10px;
-}
-
-.project-footer {
-    padding: 10px 0;
-}
-
-.btn {
-    border-radius: 0;
+    color: rgb(255, 255, 255, 0.6);
 }
