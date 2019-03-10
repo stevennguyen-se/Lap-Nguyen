@@ -96,6 +96,11 @@ app.get("/gameprojects", function(req, res) {
     res.render("gameProjects");
 });
 
+// RESEARCH PROJECTS
+app.get("/researchprojects", function(req, res) {
+    res.render("researchProjects");
+});
+
 app.get("/*", function(req, res) {
     res.redirect("/");
 });
