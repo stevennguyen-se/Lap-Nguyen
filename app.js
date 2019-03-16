@@ -27,16 +27,16 @@ app.post("/", function(req, res) {
     var emailText = '';
     emailText = "From ( " + req.body.email + " ): " + req.body.message;
     var mailOptions = {
-        from: '"Lap Nguyen" <lapnguyen.noname@gmail.com>',
-        to: 'lapnguyen.se@gmail.com',
-        subject: 'From lapnguyen.herokuapp.com - ' + req.body.title,
+        from: '"Steven Nguyen" <lapnguyen.noname@gmail.com>',
+        to: 'stevennguyen.se@gmail.com',
+        subject: 'From stevennguyen.herokuapp.com - ' + req.body.title,
         text: emailText
-    };
+        };
 
     var mailOptions2 = {
-        from: '"Lap Nguyen" <lapnguyen.noname@gmail.com>',
+        from: '"Steven Nguyen" <lapnguyen.noname@gmail.com>',
         to: req.body.email,
-        subject: 'Thank you for your email to lapnguyen.herokuapp.com',
+        subject: 'Thank you for your email to stevennguyen.herokuapp.com',
         text: "Your Email has been sent successfully! I will get back to you soon."
     };
 
