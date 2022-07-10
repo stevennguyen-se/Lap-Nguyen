@@ -521,7 +521,6 @@ p.profile-contact {
 
 .nav-menu.is-scrolling {
     padding-bottom: 0;
-
 }
 
 .navbar-nav .nav-link {
@@ -564,7 +563,7 @@ p.profile-contact {
     text-align: center;
     color: greenyellow !important;
     background-color: none;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     border: solid 1px greenyellow !important;
     padding: 10px !important;
     outline: none;
