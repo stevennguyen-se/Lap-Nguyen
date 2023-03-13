@@ -225,7 +225,7 @@ hr {
 p.profile-contact {
     font-size: 18px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 15px 0;
     color: white;
 }
 
